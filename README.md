@@ -14,7 +14,7 @@ Currently, "methods" individuals are included in this single RDF file, though th
 ## Ontological Commitments
 [Tom Gruber writes](http://www-ksl.stanford.edu/kst/what-is-an-ontology.html) that "pragmatically, a common ontology defines the vocabulary with which queries and assertions are exchanged among agents. Ontological commitments are agreements to use the shared vocabulary in a coherent and consistent manner." This ontology is based on a simple model in which the relationships between disciplines and methods are based primarily on outcomes. This allows for the autoclassificiation of methods polyhierarchically, and  roots both methods and disciplines in what they produce in user-centered design work (as opposed to politics, origins, or inertia).
 
-[img]
+![Graphical representation of UX Methods ontology structure](https://user-images.githubusercontent.com/3710835/99914748-582cd280-2cb4-11eb-8cf7-3d4709e98c0a.png)
 
 This commitment is reflected in the ontology via two constructs:
 - An individual-class mirror pattern used to align broad discipline descriptions and related methods
