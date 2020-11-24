@@ -109,8 +109,7 @@ WHERE {
 }
 ```
 
-### What other methods does card sorting inform? 
-_Includes "specializations"_
+### How do I perform a card sort and what results does it produce? 
 ```
 PREFIX : <http://www.semanticweb.org/andyfitzgerald/uxmethods#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
@@ -118,23 +117,15 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-# What other methods does car sorting inform?
-# - include "specializations"
-
-SELECT DISTINCT ?label  ?informsMethod
+SELECT DISTINCT ?method ?description ?steps (GROUP_CONCAT (?outcomes; SEPARATOR=" ,") AS ?produces)
 WHERE {
-    {
-      :CardSorting :providesInputFor ?method ; # Match insights that Card Sorting produces
-                rdfs:label ?label .
-    }
-  UNION
-    { 
-      ?variant :specializes :CardSorting ; 
-        rdfs:label ?label ;
-       :providesInputFor ?method . #Match insights that specializations of Card Sorting produce
-    }
-    ?method rdfs:label ?informsMethod .
+  :CardSorting rdfs:label ?method ;
+    dc:description ?description ;
+    :steps ?steps;
+    :produces ?outcome .
+  ?outcome rdfs:label ?outcomes .
 }
+GROUP BY ?method ?description ?steps
 ```
 
 ### List all methods and related web resources by category
