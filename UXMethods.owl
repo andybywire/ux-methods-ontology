@@ -36,7 +36,9 @@ Project Goals
 
     <!-- http://purl.org/dc/elements/1.1/created -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/created"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/created">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -188,7 +190,6 @@ Project Goals
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/created">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     </owl:DatatypeProperty>
     
 
@@ -445,8 +446,8 @@ Web Resources are named with a code-based scheme due to the high variability of 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andyfitzgerald/uxmethods#B180711">
         <rdf:type rdf:resource="http://www.semanticweb.org/andyfitzgerald/uxmethods#WebResource"/>
         <describes rdf:resource="http://www.semanticweb.org/andyfitzgerald/uxmethods#StakeholderInterviewing"/>
-        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-07-11</dc:created>
         <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://medium.com/eightshapes-llc/the-delicate-art-of-interviewing-stakeholders-d6496443cbec</dc:identifier>
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-07-11</dc:created>
         <dc:creator>Dan Brown</dc:creator>
         <dc:title>The Delicate Art of Interviewing Stakeholders</dc:title>
     </owl:NamedIndividual>
@@ -868,8 +869,8 @@ In a contextual interview, you watch and listen as the user works. You don&apos;
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andyfitzgerald/uxmethods#S110606">
         <rdf:type rdf:resource="http://www.semanticweb.org/andyfitzgerald/uxmethods#WebResource"/>
         <describes rdf:resource="http://www.semanticweb.org/andyfitzgerald/uxmethods#NavigationDesign"/>
-        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-06</dc:created>
         <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.smashingmagazine.com/2011/06/planning-and-implementing-website-navigation/</dc:identifier>
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-06</dc:created>
         <dc:publisher>Smashing Magazine</dc:publisher>
         <dc:title>Website Navigation – Planning And Implementing</dc:title>
     </owl:NamedIndividual>
