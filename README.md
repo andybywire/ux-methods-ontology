@@ -1,7 +1,11 @@
-# UX Methods Ontology
+# UX Methods Ontology (Archive)
+_NOTE: This repo is an archive of an early version of the UX Methods Ontology. For the current version being actively developed, refer to the [UX Methods Knowledge Graph project](https://github.com/andybywire/ux-methods/tree/main/_data/etl)._
+
+---
+
 This project is a sandbox/proof-of-concept for a "UX Methods" ontology, which is intended to provide context to a larger set of data about UX practices and online (web) resources. Similar concepts can be found at [Usability.gov](https://www.usability.gov/) and [18F Methods](https://methods.18f.gov/). This project seeks to improve on these resources by relating methods and concepts semantically, in accordance with how they are used in user-centered design workflows.  
 
-The application this work is intended to support is currently envisioned as a web accessible UX Methods Knowledge Graph, ideally hosted as a static progressive web app. The SSG stack currently being explored for this is Jekyll, using the [Jekyll RDF](https://github.com/AKSW/jekyll-rdf) plugin from the Agile Knowledge Engineering and Semantic Web (AKSW) Research Group.
+The application this work is intended to support is currently envisioned as a web accessible UX Methods Knowledge Graph, ideally hosted as a static progressive web app. The SSG stack currently being explored for this is Jekyll, using the [Jekyll RDF](https://github.com/AKSW/jekyll-rdf) plug-in from the Agile Knowledge Engineering and Semantic Web (AKSW) Research Group.
 
 Currently, "methods" individuals are included in this single RDF file, though this is for testing and design only. Ultimately, individuals in the :Method and :WebResource classes will be drawn from a separate store. 
 
